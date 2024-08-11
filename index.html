@@ -1,24 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="dark-theme || light-theme">
-    <nav class="dark-theme || light-theme">
-   <div class="nav-wrapper">
-    <div class="title-followers">
-        <h1>Social Media Dashboard</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" id="theme-link" />
+
+    <title>Social Media Dashboard</title>
+  </head>
+  <body class="dark-theme || light-theme">
+    <header class="dark-theme || light-theme">
+      <div class="header-wrapper">
+        <div class="title-followers">
+          <h1>Social Media Dashboard</h1>
+          <h3>Total Followers: 820</h3>
+        </div>
+        <hr />
+        <div class="color-toggle">
+          <p class="toggle">Dark Mode</p>
+          <label class="switch">
+            <input id="toggle" class="dark-mode" type="checkbox" unchecked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <div class="kpi-wrapper">
+      <div class="kpi-card">
+        <div class="card-top-github"></div>
+        <div class="kpi-card-top">
+          <div class="icon">
+            <img src="images/icons8-github.svg" alt="github" />
+          </div>
+          <div class="handle"><p><a href="https://github.com/MKAIF5">@MKAIF5</a></p></div>
+        </div>
+        <div class="kpi">18</div>
+        <div><h4 class="unit-of-measure">FOLLOWERS</h4></div>
+        <div><p class="delta up">&#9652; 1 Today</p></div>
+      </div>
+      <div class="kpi-card">
+        <div class="card-top-linkedin"></div>
+        <div class="kpi-card-top">
+          <div class="icon">
+            <img src="images/icons8-linkedin.svg" alt="twitter" />
+          </div>
+          <div class="handle"><p><a href="https://www.linkedin.com/in/mohammad-kaif-36b9b62a8/">@MOHAMMAD KAIF</a></p></div>
+        </div>
+        <div class="kpi">300</div>
+        <div><h4 class="unit-of-measure">FOLLOWERS</h4></div>
+        <div><p class="delta up">&#9652; 10 Today</p></div>
+      </div>
+      <div class="kpi-card">
+        <div class="card-top-instagram"></div>
+        <div class="kpi-card-top">
+          <div class="icon">
+            <img src="images/icons8-instagram.svg" alt="instagram" />
+          </div>
+          <div class="handle"><p><a href="https://www.instagram.com/m.kaif_5/">@M.KAIF_5</a></p></div>
+        </div>
+        <div class="kpi">500</div>
+        <div><h4 class="unit-of-measure">FOLLOWERS</h4></div>
+        <div><p class="delta up">&#9652; 10 Today</p></div>
+      </div>
+      <div class="kpi-card">
+        <div class="card-top-leetcode"></div>
+        <div class="kpi-card-top">
+          <div class="icon">
+            <img src="images/icons8-level-up-your-coding-skills-and-quickly-land-a-job-48.png" alt="youtube" />
+          </div>
+          <div class="handle"><p><a href="https://leetcode.com/u/MOHAMMED_KAIF5/">MOHAMMED_KAIF5</a></p></div>
+        </div>
+        <div class="kpi">30</div>
+        <div><h4 class="unit-of-measure">QUESTIONS</h4></div>
+        <div><p class="delta down">&#9652; 2 Today</p></div>
+      </div>
+
+
+
+
+
     </div>
-   </div>
-    
-
-
-</nav> 
-
-
-    <script src="script.js"></script>
-</body>
+    <div class="overview-header">
+      <h2>Overview - Today</h2>
+    </div>
+    <div class="overview-kpis">
+      <div class="overview-wrapper">
+        <div class="kpi-small">
+          <div class="page-views">Profiles Views</div>
+          <div class="logo">
+            <img src="images/icons8-github.svg" alt="github" />
+          </div>
+          <div class="views">153</div>
+          <div class="movement up">&#9652; 7%</div>
+        </div>
+        <div class="kpi-small">
+          <div class="page-views">Stars</div>
+          <div class="logo">
+            <img src="images/icons8-github.svg" alt="github" />
+          </div>
+          <div class="views">7</div>
+          <div class="movement down">&#9662; 1%</div>
+        </div>
+        <div class="kpi-small">
+          <div class="page-views">Likes</div>
+          <div class="logo">
+            <img src="images/icons8-instagram.svg" alt="instagram" />
+          </div>
+          <div class="views">1.3K</div>
+          <div class="movement up">&#9652; 30%</div>
+        </div>
+        <div class="kpi-small">
+          <div class="page-views">Profile Views</div>
+          <div class="logo">
+            <img src="images/icons8-instagram.svg" alt="instagram" />
+          </div>
+          <div class="views">5K</div>
+          <div class="movement up">&#9652; 50%</div>
+        </div>
+        <div class="kpi-small">
+          <div class="page-views">Repost</div>
+          <div class="logo">
+            <img src="images/icons8-linkedin.svg" alt="linkedin" />
+          </div>
+          <div class="views">15</div>
+          <div class="movement up">&#9652; 12%</div>
+        </div>
+        <div class="kpi-small">
+          <div class="page-views">Likes</div>
+          <div class="logo">
+            <img src="images/icons8-linkedin.svg" alt="linkedin" />
+          </div>
+          <div class="views">788</div>
+          <div class="movement up">&#9652; 23%</div>
+        </div>
+        <div class="kpi-small">
+          <div class="page-views">Submission</div>
+          <div class="logo">
+            <img src="images/icons8-level-up-your-coding-skills-and-quickly-land-a-job-48.png" alt="leetcode" />
+          </div>
+          <div class="views">50</div>
+          <div class="movement down">&#9652; 29%</div>
+        </div>
+        <div class="kpi-small">
+          <div class="page-views">Total Profile Views</div>
+          <div class="logo">
+            <img src="images/icons8-level-up-your-coding-skills-and-quickly-land-a-job-48.png" alt="leetcode" />
+          </div>
+          <div class="views">350</div>
+          <div class="movement down">&#9652; 62%</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

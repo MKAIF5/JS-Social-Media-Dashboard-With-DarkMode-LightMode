@@ -34,8 +34,6 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-/* #endregion */
-/* #region Header*/
 header {
   display: inline-block;
   width: 100%;
@@ -122,7 +120,6 @@ input:checked + .slider:before {
   background-color: white;
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
@@ -130,8 +127,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-/* #endregion */
-/* #region Top KPIs*/
+
 .kpi-card {
   background: #ebf1ff;
   height: 250px;
@@ -158,13 +154,13 @@ input:checked + .slider:before {
 .card-top-linkedin {
   width: 300px;
   height: 5px;
-  background-color: #1da1f3;
+  background-color: #3f95cd;
   border-radius: 8px 8px 0px 0px;
 }
 .card-top-instagram {
   width: 300px;
   height: 5px;
-  background-color: #e74f98;
+  background-color: #e74f98; /* For browsers that do not support gradients */
   background-image: linear-gradient(to right, #ffbd67, #e74f98);
   border-radius: 8px 8px 0px 0px;
 }
@@ -189,7 +185,7 @@ input:checked + .slider:before {
 }
 
 .handle a {
-  color: hsl(228, 12%, 44%);
+  color: white;
   text-decoration: none;
 }
 
@@ -197,7 +193,6 @@ input:checked + .slider:before {
   color: blue;
   text-decoration: underline;
 }
-
 img {
   height: 35px;
 }
@@ -226,7 +221,7 @@ img {
   font-weight: bold;
 }
 .down {
-  color: #10bf66;
+  color: green;
   font-weight: bold;
 }
 
@@ -286,8 +281,7 @@ img {
   text-align: right;
   padding-right: 30px;
 }
-/* #endregion */
-/* #region Max width 1355px*/
+
 @media (max-width: 1355px) {
   h1 {
     margin-left: 20px;
@@ -302,8 +296,7 @@ img {
     margin-right: 20px;
   }
 }
-/* #endregion */
-/* #region Max width 700px*/
+
 @media (max-width: 700px) {
   h1 {
     margin-left: 20px;
@@ -313,7 +306,6 @@ img {
   }
   .color-toggle {
     top: 30px;
-    /* transition: ease-in-out 0.5s;  */
     float: left;
     width: 90%;
     margin-left: 20px;
@@ -361,7 +353,45 @@ img {
   .card-top-instagram {
     width: 350px;
   }
-  .card-top-leetode {
+  .card-top-leetcode {
     width: 350px;
   }
+}
+
+header {
+  background-color: #20222f;
+}
+html,
+body {
+  background-color: #1d2029;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+.kpi-card {
+  background: #252b43;
+}
+.kpi-small {
+  background: #252b43;
+}
+.kpi {
+  color: white;
+}
+.views {
+  color: white;
+}
+p {
+  color: hsl(229.1, 25.6%, 66.3%);
+}
+.unit-of-measure {
+  color: hsl(229.1, 25.6%, 66.3%);
+}
+.page-views {
+  color: hsl(229.1, 25.6%, 66.3%);
+}
+.attribution {
+  color: white;
 }
